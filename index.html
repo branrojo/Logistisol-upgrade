@@ -138,7 +138,7 @@
 								<h2>Contáctenos</h2>
 							</header>
 
-							<form method="post" action="#">
+							<form method="post" action="#" id="contact-form">
 								<div class="row">
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Nombre" /></div>
 									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
@@ -146,11 +146,20 @@
 										<textarea name="message" placeholder="Mensaje"></textarea>
 									</div>
 									<div class="col-12">
-										<input type="submit" value="Enviar Mensaje" />
+										<input type="button" value="Enviar Mensaje" class="enviar" id="reset-form-button"/>
 									</div>
 								</div>
 							</form>
-
+							<script>
+								document.addEventListener('DOMContentLoaded', function() {
+									const resetButton = document.getElementById('reset-form-button');
+									const form = document.getElementById('contact-form');
+							
+									resetButton.addEventListener('click', function() {
+										form.reset();
+									});
+								});
+							</script>
 						</div>
 					</section>
 
