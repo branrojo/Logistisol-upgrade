@@ -263,9 +263,8 @@ input, select, textarea {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		box-sizing: border-box;
-		align-items: stretch;
-	}
+		justify-content: space-between;
+}
 
 		.row > * {
 			box-sizing: border-box;
@@ -328,7 +327,7 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
+			width: 100%;
 		}
 
 		.row > .off-4 {
@@ -1770,6 +1769,18 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		#about .image.featured {
+			text-align: center; 
+		}
+		
+		#about .image.featured img {
+			width: 100%; 
+			max-height: 450px; 
+			height: auto; 
+			display: block; 
+			margin: 0 auto; 
+		}
+		
 		.image.featured {
 			display: block;
 			width: 100%;
@@ -1981,8 +1992,9 @@ input, select, textarea {
 
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-		margin-bottom: 40px;
+		margin-bottom: 20px !important;
 		opacity: 85%;
+		width: 100%;
 	}
 
 	.item:hover {
@@ -2014,6 +2026,17 @@ input, select, textarea {
 
 	.item:hover .servicio-descripcion {
 		opacity: 100%;
+	}
+
+	.item.inventario img {
+		width: 100%;
+		max-height: 310px; 
+		height: auto;
+		object-fit: cover;
+	}
+	
+	#transporte{
+		padding-bottom: 4px;
 	}
 
 /* Icons */
