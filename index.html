@@ -70,43 +70,51 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/transporte.jpg" alt="hombre transportando" /></a>
+										<a class="image fit">
+										  <img src="images/transporte.jpg" alt="hombre transportando" />
+										</a>
 										<header>
-											<h3>Transporte</h3>
+										  <h3>Transporte</h3>
+										  <p class="servicio-descripcion">Transporte de mercancías a nivel local y nacional.</p>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/devoluciones.jpg" alt="hombres con cajas" /></a>
+										<a class="image fit"><img src="images/devoluciones.jpg" alt="hombres con cajas" /></a>
 										<header>
 											<h3>Devoluciones</h3>
+											<p class="servicio-descripcion">Servicios de logística inversa y gestión de devoluciones.</p>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/inventario.jpg" alt="mujer inventario" /></a>
+										<a class="image fit"><img src="images/inventario.jpg" alt="mujer inventario" /></a>
 										<header>
 											<h3>Inventario</h3>
+											<p class="servicio-descripcion">Distribución y manejo de inventario para optimizar la cadena de suministro.</p>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/financieros.jpg" alt="tarjeta bancaria" /></a>
+										<a class="image fit"><img src="images/financieros.jpg" alt="tarjeta bancaria" /></a>
 										<header>
 											<h3>Financieros</h3>
+											<p class="servicio-descripcion">Servicios financieros, pagos nacionales y logística bancaria.</p>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/personalizada.jpg" alt="mujeres hablando" /></a>
+										<a class="image fit"><img src="images/personalizada.jpg" alt="mujeres hablando" /></a>
 										<header>
 											<h3>Atención Personalizada</h3>
+											<p class="servicio-descripcion">Soluciones de logística especializada para necesidades únicas.</p>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/apoyo-tecnico.jpg" alt="servicio al cliente" /></a>
+										<a class="image fit"><img src="images/apoyo-tecnico.jpg" alt="servicio al cliente" /></a>
 										<header>
 											<h3>Apoyo Técnico</h3>
+											<p class="servicio-descripcion">Un equipo de asesoria integral para acompañarte en tus procesos.</p>
 										</header>
 									</article>
 								</div>
@@ -123,7 +131,7 @@
 								<h2>Nosotros</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/nosotros.jpg" alt="hombres entregando paquetes" /></a>
+							<a class="image featured"><img src="images/nosotros.jpg" alt="hombres entregando paquetes" /></a>
 
 							<p>En <strong>Logistisol </strong>nos dedicamos a ofrecer soluciones logísticas y comerciales diseñadas para satisfacer las necesidades de transporte, almacenamiento y servicios financieros de nuestros clientes en Medellín y más allá. Desde nuestra fundación, hemos estado comprometidos con la excelencia en el servicio, la innovación y la satisfacción del cliente.</p>
 
@@ -150,16 +158,7 @@
 									</div>
 								</div>
 							</form>
-							<script>
-								document.addEventListener('DOMContentLoaded', function() {
-									const resetButton = document.getElementById('reset-form-button');
-									const form = document.getElementById('contact-form');
 							
-									resetButton.addEventListener('click', function() {
-										form.reset();
-									});
-								});
-							</script>
 						</div>
 					</section>
 
@@ -183,6 +182,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const resetButton = document.getElementById('reset-form-button');
+					const form = document.getElementById('contact-form');
+			
+					resetButton.addEventListener('click', function() {
+						form.reset();
+					});
+				});
+			</script>
+			
 	</body>
 </html>
